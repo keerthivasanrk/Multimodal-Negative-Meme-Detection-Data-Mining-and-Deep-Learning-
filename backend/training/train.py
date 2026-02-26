@@ -38,7 +38,7 @@ class MemeDataset(Dataset):
         img_path = os.path.join(IMAGE_DIR, row["file_name"])
 
         image = Image.open(img_path).convert("RGB")
-        image = image_transform(image)   # ✅ now tensor
+        image = image_transform(image)   
 
         text = str(row["text"])
         label = torch.tensor(row["label"], dtype=torch.float32)
