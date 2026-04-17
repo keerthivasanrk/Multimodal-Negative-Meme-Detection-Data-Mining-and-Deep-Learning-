@@ -291,3 +291,115 @@ h1 {
     transform: rotate(360deg);
   }
 }
+
+/* ── Multimodal Analysis Grid ── */
+.analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.analysis-card {
+  border-radius: 14px;
+  padding: 1.2rem;
+  border: 1px solid var(--glass-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 0.2s ease;
+}
+
+.analysis-card:hover {
+  transform: translateY(-2px);
+}
+
+.card-harm {
+  background: rgba(239, 68, 68, 0.08);
+  border-color: rgba(239, 68, 68, 0.25);
+}
+
+.card-ok {
+  background: rgba(16, 185, 129, 0.06);
+  border-color: rgba(16, 185, 129, 0.15);
+}
+
+.analysis-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.analysis-icon {
+  font-size: 1.1rem;
+}
+
+.analysis-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  flex: 1;
+}
+
+.mini-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 100px;
+}
+
+.mini-hate {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--accent-hate);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.mini-safe {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-safe);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.analysis-detail {
+  font-size: 0.85rem;
+  color: var(--text-main);
+  line-height: 1.4;
+  min-height: 2rem;
+}
+
+.mini-bar-bg {
+  height: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.mini-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+/* ── Signal Pills ── */
+.signal-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 100px;
+  border: 1px solid;
+  margin: 0.2rem;
+}
+
+.signal-active {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.signal-inactive {
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  background: transparent;
+}

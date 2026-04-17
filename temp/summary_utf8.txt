@@ -1,0 +1,23 @@
+﻿ACCURACY REPORT
+============================================================
+  Hateful memes:  18/30 correct  (60.0%)
+  Safe memes:     2/4 correct  (50.0%)
+  Overall:        58.8%
+============================================================
+
+MISSED CASES:
+  3220.jpg                  predicted=SAFE  visual=False  text=False  reason=safe
+  170.jpg                   predicted=SAFE  visual=False  text=False  reason=safe
+  1237.jpg                  predicted=SAFE  visual=False  text=False  reason=safe
+  8863.jpg                  predicted=SAFE  visual=False  text=False  reason=safe
+  11511.jpg                 predicted=SAFE  visual=False  text=False  reason=safe
+  6704.jpg                  predicted=SAFE  visual=False  text=False  reason=safe
+  10545.jpg                 predicted=SAFE  visual=False  text=False  reason=safe
+  11627.jpg                 predicted=SAFE  visual=False  text=False  reason=safe
+  10455.jpg                 predicted=SAFE  visual=False  text=False  reason=safe
+  666.jpg                   predicted=SAFE  visual=False  text=False  reason=safe
+  9646.jpg                  predicted=SAFE  visual=False  text=False  reason=safe
+  6716.jpg                  predicted=SAFE  visual=False  text=False  reason=safe
+  images (1).jpg            predicted=HATEFUL  visual=False  text=True  reason=explicit_content: ass
+  kk.jpg                    predicted=HATEFUL  visual=False  text=True  reason=offensive_language
+
